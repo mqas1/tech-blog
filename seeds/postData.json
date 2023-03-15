@@ -1,0 +1,14 @@
+[
+  {
+    "title": "Template engines",
+    "content": "It has been fun learning about Handlebars and creating a full stack web application with it."
+  },
+  {
+    "title": "Why MVC is so important",
+    "content": "MVC allows developers to maintain a true separation of concerns, devising their code between the Model layer for data, the View layer for design, and the Controller layer for application logic."
+  },
+  {
+    "title": "Authentication vs. Authorisation",
+    "content": "There is a difference between authenticaton and authorisation. Authentication means confirming your own identity, whereas authorisation means being allowed access to the system."
+  }
+]
