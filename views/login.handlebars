@@ -1,0 +1,84 @@
+<div class="bodyContainer">
+  <div class="container">
+    <form class="form" id="login">
+      <h1 class="form-title">Login</h1>
+      <div class="form-message form-message-error"></div>
+      <div class="form-input-group">
+        <input
+          type="text"
+          id="userEmail"
+          class="form-input"
+          placeholder="Email"
+        />
+        <div class="form-input-error-message"></div>
+      </div>
+      <div class="form-input-group">
+        <input
+          type="password"
+          id="userPassword"
+          class="form-input"
+          placeholder="Password"
+        />
+        <div class="form-input-error-message"></div>
+      </div>
+      <button class="form-button" type="submit">Continue</button>
+      <p class="form-text">
+        <a class="form-link" id="linkCreateAccount"
+          >Don't have an account? Create Account</a
+        >
+      </p>
+    </form>
+
+    <form class="form hidden" id="createAccount">
+      <h1 class="form-title">Create Account</h1>
+      <div class="form-message form-message-error"></div>
+      <div class="form-input-group">
+        <input
+          type="text"
+          id="signupUsername"
+          class="form-input"
+          placeholder="Username"
+        />
+        <div class="form-input-error-message"></div>
+      </div>
+      <div class="form-input-group">
+        <input
+          type="text"
+          id="signupEmail"
+          class="form-input"
+          placeholder="Email"
+        />
+        <div class="form-input-error-message"></div>
+      </div>
+      <div class="form-input-group">
+        <input
+          type="password"
+          id="signupPassword"
+          class="form-input"
+          placeholder="Password"
+        />
+        <div class="form-input-error-message"></div>
+      </div>
+
+      <div class="form-input-group">
+        <input
+          type="password"
+          id="signupConfirmPassword"
+          class="form-input"
+          placeholder="Confirm Password"
+        />
+        <div class="form-input-error-message"></div>
+      </div>
+      <button id="submit-button" class="form-button" type="submit">
+        Continue
+      </button>
+      <p class="form-text">
+        <a class="form-link" id="linkLogin"
+          >Already have an account? Sign In</a
+        >
+      </p>
+    </form>
+  </div>
+</div>
+
+<script src="./js/login.js"></script>
