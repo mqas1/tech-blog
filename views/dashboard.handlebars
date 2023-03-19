@@ -3,7 +3,7 @@
   <div> 
     <div>
       <h2>
-        <a href="/post/{{post.id}}">{{post.title}}</a>
+        <a href="dashboard/post/{{post.id}}">{{post.title}}</a>
       </h2>
       <span>
         Created by {{post.user.user_name}} on {{format_date post.date_created}}
@@ -12,12 +12,6 @@
     <p>
       {{post.content}}
     </p>
-    <div>
-      <button data-id="{{post.id}}">DELETE</button>
-    </div>
-    <div>
-      <button data-id="{{post.id}}">EDIT</button>
-    </div>
   </div>
   {{/each}}
 {{/if}}
