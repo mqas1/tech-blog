@@ -1,0 +1,28 @@
+<div> 
+  <div>
+    <h2>
+      {{title}}
+    </h2>
+    <span>
+      Created by {{user.user_name}} on {{format_date date_created}}
+    </span>
+  </div>
+  <p>
+    {{content}}
+  </p>
+</div>
+
+{{#if comments.length}}
+  {{#each comments as |comment| }}
+  <div data-id="{{comment.id}}" data-post-id="{{comment.post_id}}"> 
+    <div>
+      <h2>
+        <a href="/comment/{{comment.id}}">Created by {{comment.user.user_name}} on {{format_date comment.date_created}}</a>
+      </h2>
+    </div>
+    <p>
+      {{comment.content}}
+    </p>
+  </div>
+  {{/each}}
+{{/if}}
